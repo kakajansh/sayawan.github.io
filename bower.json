@@ -1,0 +1,32 @@
+{
+  "name": "sayawan-github-io",
+  "description": "E.g. Seed project to get started with Famo.us.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sayawan/sayawan-github-io",
+  "authors": [{
+    "name": "Say a Wan",
+    "url": "http://github.com/sayawan/"
+  }],
+  "main": "app/index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "famo.us"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15",
+    "almond": "~0.2.9",
+    "famous-polyfills": "~0.3.0",
+    "famous": "~0.3.5"
+  }
+}
