@@ -45,13 +45,13 @@ define(function(require, exports, module) {
     AppView.prototype.constructor = AppView;
 
     AppView.DEFAULT_OPTIONS = {
-        image: '/content/images/user.jpg',
+        image: '../content/images/user.jpg',
         name: 'Mervas Dayi'
     };
 
     function _createBack() {
         var imageSurface = new BkImageSurface({
-            content: '/content/images/bg.jpg',
+            content: '../content/images/bg.jpg',
             sizeMode: BkImageSurface.SizeMode.ASPECTFILL
         });
         this.add(imageSurface);
