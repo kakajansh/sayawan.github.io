@@ -9,7 +9,7 @@ define(function(require, exports, module) {
     var FlexScrollView = require('famous-flex/FlexScrollView');
     var CollectionLayout = require('famous-flex/layouts/CollectionLayout');
 
-    function HomeView(options) {
+    function AboutView(options) {
         View.apply(this, arguments);
 
         this._eventInput.on('deployed', function() {
@@ -22,10 +22,10 @@ define(function(require, exports, module) {
         // _createBack.call(this);
     }
 
-    HomeView.prototype = Object.create(View.prototype);
-    HomeView.prototype.constructor = HomeView;
+    AboutView.prototype = Object.create(View.prototype);
+    AboutView.prototype.constructor = AboutView;
 
-    HomeView.DEFAULT_OPTIONS = {
+    AboutView.DEFAULT_OPTIONS = {
 
     }
 
@@ -47,7 +47,7 @@ define(function(require, exports, module) {
     function _createTitle() {
         this.title = new Surface({
             // size: [true, true],
-            content: 'Web developer',
+            content: 'About view',
             classes: [],
             properties: {
                 color: 'white',
@@ -129,5 +129,5 @@ define(function(require, exports, module) {
         this.add(scrollView.state).add(scrollView);
     }
 
-    module.exports = HomeView;
+    module.exports = AboutView;
 });
